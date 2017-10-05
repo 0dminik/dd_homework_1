@@ -36,7 +36,7 @@
     NSString *value = self.valueLabel.text;
     if ([value isEqualToString:@"0"] || self.waitNextOperand){
         value = @""; // при нажатии на цифру удаляется 0
-        self.waitNextOperand = YES;
+        self.waitNextOperand = NO; // весь вопрос был тут!!!
     }
     
     value = [value stringByAppendingString:sender.titleLabel.text];
